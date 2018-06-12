@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Sitecore.Commerce.Core.Enhancements</Description>
+    <VersionPrefix>1</VersionPrefix>
+    <Authors>yours</Authors>
+    <TargetFramework>net462</TargetFramework>
+    <PackageTags>$(PackageTags) </PackageTags>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+    <AssemblyName>Plugin.Sample.JsonCommander</AssemblyName>
+    <RootNamespace>Plugin.Sample.JsonCommander</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <Folder Include="EntityViews\" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Sitecore.Commerce.Core" Version="2.0.884" />
+  </ItemGroup>
+
+</Project>

@@ -18,8 +18,8 @@
 
   <ItemGroup>
     <PackageReference Include="Bogus" Version="20.0.2" />
-    <PackageReference Include="Sitecore.Commerce.Core" Version="2.0.660" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.Catalog" Version="2.0.735" />
+    <PackageReference Include="Sitecore.Commerce.Core" Version="2.0.884" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Catalog" Version="2.0.1022" />
   </ItemGroup>
 
   <ItemGroup>

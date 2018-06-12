@@ -211,5 +211,5 @@ ModelManifest.xml
 *.DotSettings
 *.chm
 directory.build.*
-**/pacakges/*
+**/packages/*
 GitVersion.yml

@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Sitecore Commerce Plugin Sample Class Library</Description>
+    <Copyright>Â© 2017 Sitecore Corporation A/S. All rights reserved. SitecoreÂ® is a registered trademark of Sitecore Corporation A/S.</Copyright>
+    <VersionPrefix>0.0.1</VersionPrefix>
+    <Authors>Sitecore</Authors>
+    <TargetFramework>net462</TargetFramework>
+    <AssemblyName>Plugin.Sample.PerformanceTuning</AssemblyName>
+    <PackageId>Plugin.Sample.PerformanceTuning</PackageId>
+    <PackageTags>Sitecore;Commerce;Plugin;Sample;Example</PackageTags>
+    <PackageReleaseNotes>release notes</PackageReleaseNotes>
+    <PackageIconUrl>http://www.sitecore.net/favicon.ico</PackageIconUrl>
+    <PackageProjectUrl>http://www.sitecore.net/</PackageProjectUrl>
+    <PackageLicenseUrl>http://www.sitecore.net/platform/pricing.aspx</PackageLicenseUrl>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Sitecore.Commerce.Core" Version="2.0.884" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.BusinessUsers" Version="2.0.884" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Carts" Version="2.0.489" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Catalog" Version="2.0.1022" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Coupons" Version="2.0.587" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Fulfillment" Version="2.0.587" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Inventory" Version="2.0.526" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Payments" Version="2.0.587" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Components\" />
+    <Folder Include="Entities\" />
+    <Folder Include="EntityViews\" />
+  </ItemGroup>
+
+</Project>

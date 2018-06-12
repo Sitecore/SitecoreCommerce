@@ -25,13 +25,27 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Sitecore.Commerce.Core" Version="2.0.660" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.BusinessUsers" Version="2.0.660" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.Search" Version="2.0.394" />
+    <Compile Remove="Tests\EnsureContentItemChildrenBlockFixture.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentAssertions" Version="5.1.2" />
+    <PackageReference Include="NSubstitute" Version="3.1.0" />
+    <PackageReference Include="Sitecore.Commerce.Core" Version="2.0.884" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.BusinessUsers" Version="2.0.884" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Search" Version="2.0.550" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Search.Solr" Version="2.0.550" />
+    <PackageReference Include="xunit" Version="2.3.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.3.0" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Components\" />
+    <Folder Include="Tests\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Plugin.Sample.Plugin.Enhancements\Plugin.Sample.Plugin.Enhancements.csproj" />
   </ItemGroup>
 
 
