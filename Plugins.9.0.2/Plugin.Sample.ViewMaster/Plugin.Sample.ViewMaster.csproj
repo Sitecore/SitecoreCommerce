@@ -25,8 +25,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Sitecore.Commerce.Core" Version="2.2.6" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.BusinessUsers" Version="2.2.6" />
+    <PackageReference Include="Sitecore.Commerce.Core" Version="2.2.24" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.BusinessUsers" Version="2.2.24" />
   </ItemGroup>
 
   <ItemGroup>

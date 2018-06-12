@@ -67,11 +67,12 @@ namespace Plugin.Sample.HandleMissingSitecore
                 d.Add<EnsureDefaultShop>().After<GetShopBlock>();
             })
 
-            .ConfigurePipeline<IGetCommerceTermsPipeline>(d =>
-            {
-                //Remove so that it doesn't fail when it cant find the Shop in Sitecore
-                d.Replace<GetCommerceTermsBlock, MockCommerceTerms>();
-            })
+            //TODO
+            //.ConfigurePipeline<IGetCommerceTermsPipeline>(d =>
+            //{
+            //    //Remove so that it doesn't fail when it cant find the Shop in Sitecore
+            //    d.Replace<GetCommerceTermsBlock, MockCommerceTerms>();
+            //})
 
             //## END Handle missing Sitecore better
             );

@@ -104,14 +104,15 @@ namespace Plugin.Sample.Search.Management
                     RawValue = $"<a href='{solrPolicy.SolrUrl}' target='_blank'>{solrPolicy.SolrUrl}</a> "
                 });
 
-            entityView.Properties.Add(
-                new ViewProperty
-                {
-                    Name = "UniqueIdFieldName",
-                    IsHidden = false,
-                    IsReadOnly = true,
-                    RawValue = solrPolicy.UniqueIdFieldName
-                });
+            //TODO
+            //entityView.Properties.Add(
+            //    new ViewProperty
+            //    {
+            //        Name = "UniqueIdFieldName",
+            //        IsHidden = false,
+            //        IsReadOnly = true,
+            //        RawValue = solrPolicy.UniqueIdFieldName
+            //    });
 
             return Task.FromResult(entityView);
         }

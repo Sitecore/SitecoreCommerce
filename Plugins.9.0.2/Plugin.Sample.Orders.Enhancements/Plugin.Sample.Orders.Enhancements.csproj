@@ -25,12 +25,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Sitecore.Commerce.Core" Version="2.2.6" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.BusinessUsers" Version="2.2.6" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.Coupons" Version="2.2.8" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.Fulfillment" Version="2.2.8" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.Orders" Version="2.2.8" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.Payments" Version="2.2.8" />
+    <PackageReference Include="Sitecore.Commerce.Core" Version="2.2.24" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.BusinessUsers" Version="2.2.24" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Coupons" Version="2.2.20" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Fulfillment" Version="2.2.20" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Orders" Version="2.2.20" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Payments" Version="2.2.20" />
   </ItemGroup>
 
   <ItemGroup>

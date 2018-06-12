@@ -105,7 +105,7 @@ namespace Plugin.Sample.ContentItemCommander
 
             try
             {
-                items = this.GetItems(context.CommerceContext, arg.ItemPathOrId, language);
+                items = await this.GetItems(context.CommerceContext, arg.ItemPathOrId, language);
                 if (items != null)
                 {
                     this._commander.Command<ContentCommander>()
@@ -151,12 +151,13 @@ namespace Plugin.Sample.ContentItemCommander
         /// <param name="path">The items path.</param>
         /// <param name="language">The language.</param>
         /// <returns>A list of <see cref="ItemModel"/></returns>
-        protected virtual List<ItemModel> GetItems(CommerceContext context, string path, string language = null)
+        protected virtual async Task<List<ItemModel>> GetItems(CommerceContext context, string path, string language = null)
         {
             Condition.Requires(context).IsNotNull($"{this.Name}: context cannot be null.");
             Condition.Requires(path).IsNotNullOrEmpty($"{this.Name}: path cannot be null or empty.");
 
-            var items = SitecoreConnectionManager.GetItemsByPath(context, path, language);
+            //TODO
+            var items = await new SitecoreConnectionManager().GetItemsByPathAsync(context, path, language);
 
             return items;
         }

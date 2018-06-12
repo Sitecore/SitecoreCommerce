@@ -13,8 +13,8 @@
 
   <ItemGroup>
     <PackageReference Include="eBay" Version="3.1027.0" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.Inventory" Version="2.2.16" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.Management" Version="2.2.5" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Inventory" Version="2.2.20" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Management" Version="2.2.8" />
   </ItemGroup>
 
 

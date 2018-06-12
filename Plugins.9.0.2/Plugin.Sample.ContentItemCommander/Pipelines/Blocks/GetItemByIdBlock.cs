@@ -101,7 +101,7 @@ namespace Plugin.Sample.ContentItemCommander
 
                 try
                 {
-                    item = this.GetItem(context.CommerceContext, arg.ItemPathOrId, language);
+                    item = await this.GetItem(context.CommerceContext, arg.ItemPathOrId, language);
                     if (item != null)
                     {
                         this._commander.Command<ContentCommander>()
@@ -148,7 +148,7 @@ namespace Plugin.Sample.ContentItemCommander
         /// <param name="id">The identifier.</param>
         /// <param name="language">The language.</param>
         /// <returns>A <see cref="ItemModel"/> by id</returns>
-        protected virtual ItemModel GetItem(CommerceContext context, string id, string language = null)
+        protected async virtual Task<ItemModel> GetItem(CommerceContext context, string id, string language = null)
         {
             Condition.Requires(context).IsNotNull($"{this.Name}: the context cannot be null.");
             Condition.Requires(id).IsNotNullOrEmpty($"{this.Name}: the id cannot be null or empty.");
@@ -160,7 +160,8 @@ namespace Plugin.Sample.ContentItemCommander
             {
                 var startTime = DateTimeOffset.UtcNow;
                 var timer = System.Diagnostics.Stopwatch.StartNew();
-                item = SitecoreConnectionManager.GetItemById(context, id, language);
+                //TODO
+                item = await new SitecoreConnectionManager().GetItemByIdAsync(context, id, language);
                 timer.Stop();
 
                 context.TelemetryClient.TrackDependency("Sitecore", "GetItemById", startTime, timer.Elapsed, true);

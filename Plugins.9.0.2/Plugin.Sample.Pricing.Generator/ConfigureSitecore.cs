@@ -54,7 +54,7 @@ namespace Plugin.Sample.Pricing.Generator
               .ConfigurePipeline<IFormatEntityViewPipeline>(d =>
               {
                   d.Add<EnsureActions>().After<PopulateEntityViewActionsBlock>();
-              })
+              }));
               //Custom End
 
 
