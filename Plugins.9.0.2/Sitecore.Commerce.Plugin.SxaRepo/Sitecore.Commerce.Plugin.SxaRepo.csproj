@@ -27,9 +27,9 @@
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
     <PackageReference Include="Sitecore.Commerce.Connect.Core.Models" Version="11.2.63" />
-    <PackageReference Include="Sitecore.Commerce.Core" Version="2.2.24" />
+    <PackageReference Include="Sitecore.Commerce.Core" Version="2.2.29" />
     <PackageReference Include="Sitecore.Commerce.Plugin.Availability" Version="2.2.8" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.BusinessUsers" Version="2.2.24" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.BusinessUsers" Version="2.2.29" />
     <PackageReference Include="Sitecore.Commerce.Plugin.Carts" Version="2.2.11" />
     <PackageReference Include="Sitecore.Commerce.Plugin.Catalog" Version="2.2.38" />
   </ItemGroup>

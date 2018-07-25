@@ -25,10 +25,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Sitecore.Commerce.Core" Version="2.2.24" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.BusinessUsers" Version="2.2.24" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.Carts" Version="2.2.10" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.Pricing" Version="2.2.11" />
+    <PackageReference Include="Sitecore.Commerce.Core" Version="2.2.29" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.BusinessUsers" Version="2.2.29" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Carts" Version="2.2.11" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Pricing" Version="2.2.12" />
   </ItemGroup>
 
   <ItemGroup>

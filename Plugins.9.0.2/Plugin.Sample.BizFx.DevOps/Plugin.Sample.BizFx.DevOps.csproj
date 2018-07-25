@@ -17,9 +17,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Sitecore.Commerce.Plugin.BusinessUsers" Version="2.2.24" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.Management" Version="2.2.8" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.SQL" Version="2.2.4" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.BusinessUsers" Version="2.2.29" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Management" Version="2.2.9" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.SQL" Version="2.2.6" />
   </ItemGroup>
 
   <ItemGroup>
@@ -27,11 +27,15 @@
   </ItemGroup>
 
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <WarningsAsErrors />
   </PropertyGroup>
 
 

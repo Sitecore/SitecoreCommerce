@@ -17,18 +17,22 @@
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <WarningsAsErrors />
+  </PropertyGroup>
+
   <ItemGroup>
-    <PackageReference Include="Sitecore.Commerce.Core" Version="2.2.24" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.BusinessUsers" Version="2.2.24" />
+    <PackageReference Include="Sitecore.Commerce.Core" Version="2.2.29" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.BusinessUsers" Version="2.2.29" />
     <PackageReference Include="Sitecore.Commerce.Plugin.Customers" Version="2.2.10" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.Entitlements" Version="2.2.6" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Entitlements" Version="2.2.7" />
   </ItemGroup>
 
   <ItemGroup>
