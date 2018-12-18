@@ -1,0 +1,36 @@
+﻿
+namespace Plugin.Sample.CommerceDashboard.EntityViews
+{
+    using System.Threading.Tasks;
+
+    using Sitecore.Commerce.Core;
+    using Sitecore.Commerce.EntityViews;
+    using Sitecore.Framework.Conditions;
+    using Sitecore.Framework.Pipelines;
+
+    [PipelineDisplayName("EnsureNavigationView")]
+    public class EnsureNavigationView : PipelineBlock<EntityView, EntityView, CommercePipelineExecutionContext>
+    {
+        public override Task<EntityView> Run(EntityView entityView, CommercePipelineExecutionContext context)
+        {
+            Condition.Requires(entityView).IsNotNull($"{this.Name}: The argument cannot be null");
+
+            if (entityView.Name != "ToolsNavigation")
+            {
+                return Task.FromResult(entityView);
+            }
+
+            var newEntityView = new EntityView
+            {
+                Name = "MyDashboard",
+                DisplayName = "My DashBoard",
+                Icon = "data",
+                ItemId = "MyDashboard"
+            };
+
+            entityView.ChildViews.Add(newEntityView);
+
+            return Task.FromResult(entityView);
+        }
+    }
+}
