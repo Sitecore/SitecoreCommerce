@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net462</TargetFramework>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Bogus" Version="22.0.8" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Coupons" Version="2.4.*" />
+  </ItemGroup>
+
+</Project>
