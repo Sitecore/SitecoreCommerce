@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net462</TargetFramework>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Sitecore.Commerce.Plugin.Fulfillment" Version="2.4.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Tax" Version="2.4.*" />
+  </ItemGroup>
+
+</Project>

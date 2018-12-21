@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net462</TargetFramework>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="eBay" Version="3.1027.0" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Inventory" Version="2.4.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Management" Version="2.4.*" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net462' ">
+    <Reference Include="System.Transactions" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Plugin.Sample.Enhancements\Plugin.Sample.Enhancements.csproj" />
+  </ItemGroup>
+
+ </Project>
