@@ -8,4 +8,38 @@ Rebuild.
 
 [See the 9.0.3 documentation on deploying your custom XC solution](https://doc.sitecore.com/developers/90/sitecore-experience-commerce/en/deploying-your-sitecore-xc-solution.html) or [Ian Webster's blog](https://websterian.com/2018/05/21/sitecore-commerce-9-x-how-to-setup-your-development-environment-to-customize-the-commerce-engine/) (from an earlier version) to get started with XC development.  
 
+Included Plugins
++ BizFx.DevOps 
+    + Provides a mechanism for listing Environments and viewing their details and viewing other metadata and configuration data of a Experienice Commerce deployment.
++ BizFx.Enhancements
+    + Provides mechanisms for validating data in an Experience Commerce system.  Currently it can check to ensure Sellable Items (Products) have images and that Price Cards have snapshots.
++ Catalog.Generator 
+    + Generates fake catalog data for testing or demo purposes.
++ ContentItemCommander 
+    + A demostration of creating dashboards and other content items.  
++ Ebay 
+    + Ebay Marketplace Integration from Experience Commerce and BizFx
++ Enhancements 
+    + Plugin which enables other enhancements via the sample plugins. 
++ Entitlement.Enhancements 
+    + Demostrates modifying the CustomerEntitlements view 
++ ExtendedConditions 
+    + Sample conditions for the Experience Commerce Promotion Engine
++ HandleMissingSitecore
+    + Enables Experience Commerce to function without a connection to Sitecore XP
++ JsonCommander 
+    + A utility plugin used by other sample plugins.
++ ListMaster
+    + Manages list of Commerce Entities
++ Orders.Enhancements 
+    + Plugin which returns KPIs on Orders 
++ Pricing.Generator
+    + Plugin for generating sample Price Cards 
++ Promotions.Generator 
+    + Plugin for generating sample Promotions 
++ Search.Management 
+    + A Plugin for managing search within Experience Commerce Engine 
++ VatTax
+    + A Plugin for calculating simple VAT 
+
 For more information please go to [Sitecore.net](http://www.sitecore.net)
