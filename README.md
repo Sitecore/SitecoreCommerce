@@ -13,12 +13,8 @@ Included Plugins
     + Provides a mechanism for listing Environments and viewing their details and viewing other metadata and configuration data of a Experienice Commerce deployment.
 + BizFx.Enhancements
     + Provides mechanisms for validating data in an Experience Commerce system.  Currently it can check to ensure Sellable Items (Products) have images and that Price Cards have snapshots.
-+ Catalog.Enhancements
-    +  TBD
 + Catalog.Generator 
     + Generates fake catalog data for testing or demo purposes.
-+ CommerceDashboard 
-    + TBD
 + ContentItemCommander 
     + A demostration of creating dashboards and other content items.  
 + Ebay 
@@ -26,13 +22,13 @@ Included Plugins
 + Enhancements 
     + Plugin which enables other enhancements via the sample plugins. 
 + Entitlement.Enhancements 
-    + TBD
+    + Demostrates modifying the CustomerEntitlements view 
 + ExtendedConditions 
     + Sample conditions for the Experience Commerce Promotion Engine
 + HandleMissingSitecore
     + Enables Experience Commerce to function without a connection to Sitecore XP
 + JsonCommander 
-    + TBD
+    + A utility plugin used by other sample plugins.
 + ListMaster
     + Manages list of Commerce Entities
 + Orders.Enhancements 
@@ -41,13 +37,9 @@ Included Plugins
     + Plugin for generating sample Price Cards 
 + Promotions.Generator 
     + Plugin for generating sample Promotions 
-+ Roles.Enhancements 
-    + TBD
 + Search.Management 
     + A Plugin for managing search within Experience Commerce Engine 
 + VatTax
     + A Plugin for calculating simple VAT 
-+ ViewMaster 
-    + TBD
 
 For more information please go to [Sitecore.net](http://www.sitecore.net)
