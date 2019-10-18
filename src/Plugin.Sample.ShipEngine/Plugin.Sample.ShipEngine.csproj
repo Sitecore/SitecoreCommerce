@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net471</TargetFramework>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>NU1605</NoWarn>
+  </PropertyGroup>
+ 
+  <ItemGroup>
+    <PackageReference Include="ShipEngine.ApiClient" Version="1.2.30" />
+    <PackageReference Include="Sitecore.Commerce.Core" Version="3.0.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Catalog" Version="3.0.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Fulfillment" Version="3.0.*" />
+    <PackageReference Include="StatesAndProvinces" Version="1.0.0" />
+  </ItemGroup>
+  
+</Project>
